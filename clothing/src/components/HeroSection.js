@@ -1,6 +1,6 @@
 const HeroSection = () => {
     return (
-      <div className="bg-cover bg-center bg-gray-900 py-20 text-white">
+      <div className="bg-cover bg-center bg-[#1a1a1a] py-20 text-white">
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="text-center sm:text-left mb-8 sm:mb-0">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">

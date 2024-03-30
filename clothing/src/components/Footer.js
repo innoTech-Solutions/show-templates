@@ -2,7 +2,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaPinterest, FaEnvelope } from 'rea
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-[#1a1a1a] text-white">
       <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -27,7 +27,7 @@ const Footer = () => {
             <p className="mb-4">Subscribe to our newsletter for the latest updates.</p>
             <div className="flex">
               <input type="email" placeholder="Enter your email" className="bg-gray-700 text-white px-4 py-2 rounded-l-lg focus:outline-none" />
-              <button className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-r-lg">Subscribe</button>
+              <button className="bg-cyan-500 hover:bg-cyan-600 cursor-pointer transition-colors duration-300 text-white px-4 py-2 rounded-r-lg">Subscribe</button>
             </div>
           </div>
           <div>
