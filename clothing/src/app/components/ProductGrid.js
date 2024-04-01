@@ -8,18 +8,23 @@ const ProductGrid = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-1 hover:shadow-lg cursor-pointer"
+            className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg cursor-pointer"
           >
             <div className="aspect-w-1 aspect-h-1">
               <img
                 src={product.image}
                 alt={product.title}
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full transition duration-300 ease-in-out transform hover:scale-110"
               />
             </div>
             <div className="p-4">
               <h2 className="text-xl font-semibold mb-2">{product.title}</h2>
               <p className="text-gray-600">{product.price}</p>
+              <p className="text-gray-800 mt-2">{product.description}</p>
+              <p className="text-gray-800 mt-2">Sizes: {product.sizes.join(', ')}</p>
+              <p className="text-gray-800 mt-2">Colors: {product.colors.map((color, index) => (
+                <span key={index} className="inline-block h-6 w-6 rounded-full mr-2" style={{ backgroundColor: color, border: '1px solid #333' }}></span>
+              ))}</p>
             </div>
           </div>
         ))}

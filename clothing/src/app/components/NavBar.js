@@ -36,13 +36,19 @@ const NavBar = () => {
           <div className="relative" ref={dropdownRef}>
             <ul className="flex space-x-4">
               <li>
-                <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">Shop</span>
+                <Link href="/shop">
+                  <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">Shop</span>
+                </Link>
               </li>
               <li>
-                <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">About</span>
+                <Link href="/about">
+                  <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">About</span>
+                </Link>
               </li>
               <li>
-                <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">Contact</span>
+                <Link href="/contact">
+                  <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">Contact</span>
+                </Link>
               </li>
               <li>
                 <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300" onClick={handleDropdownToggle}>
@@ -52,10 +58,10 @@ const NavBar = () => {
                   <div className="absolute top-full right-0 mt-2 bg-white rounded-md shadow-lg">
                     <ul className="py-2">
                       <li>
-                        <span className="block px-4 py-2 text-gray-800 hover:bg-gray-200">My Account</span>
+                        <span className="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer">My Account</span>
                       </li>
                       <li>
-                        <span className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cart</span>
+                        <span className="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer">Cart</span>
                       </li>
                     </ul>
                   </div>

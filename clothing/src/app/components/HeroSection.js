@@ -10,12 +10,11 @@ const HeroSection = () => {
               Explore our collection of clothing and accessories<br></br>
               for every style and occasion.
             </p>
-            <a
-              href="#"
+            <span
               className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-colors duration-300"
             >
               Shop Now
-            </a>
+            </span>
           </div>
           <div className="hidden sm:block sm:w-1/2">
             <img
