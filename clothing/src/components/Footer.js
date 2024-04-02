@@ -1,24 +1,28 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaPinterest, FaEnvelope } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className="bg-[#1a1a1a] text-white">
       <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <Link href="/">
+          <h1 className="text-5xl font-bold mb-8">Clothing Store</h1> 
+        </Link>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-gray-300">
-                <FaFacebook />
+                <FaFacebook size={24} /> {/* Increased the icon size */}
               </a>
               <a href="#" className="text-white hover:text-gray-300">
-                <FaTwitter />
+                <FaTwitter size={24} /> {/* Increased the icon size */}
               </a>
               <a href="#" className="text-white hover:text-gray-300">
-                <FaInstagram />
+                <FaInstagram size={24} /> {/* Increased the icon size */}
               </a>
               <a href="#" className="text-white hover:text-gray-300">
-                <FaPinterest />
+                <FaPinterest size={24} /> {/* Increased the icon size */}
               </a>
             </div>
           </div>

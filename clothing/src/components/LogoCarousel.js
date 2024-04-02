@@ -17,7 +17,6 @@
  * Note:
  * The `AutoScroll` plugin is used to make the carousel auto-scroll.
  */
-
 import {
     Carousel,
     CarouselContent,
@@ -29,32 +28,38 @@ import AutoScroll from "embla-carousel-auto-scroll";
 
 const LogoCarousel = ({ logos }) => {
     return (
-        <Carousel
-            opts={{
-                loop: true,
-                align: "center",
-            }}
-            plugins={[AutoScroll({stopOnInteraction: false})]}
-            className="py-8"
-        >
-            <CarouselContent>
-                {logos.map((logo, index) => {
-                    return (
-                        <CarouselItem className="basis-1/5" key={index}>
-                            <Card className="border-0 shadow-none">
-                                <CardContent className="flex items-center justify-center p-6">
-                                    <img
-                                        src={`/logos/${logo}`}
-                                        alt={logo}
-                                        className="h-12 w-auto"
-                                    />
-                                </CardContent>
-                            </Card>
-                        </CarouselItem>
-                    );
-                })}
-            </CarouselContent>
-        </Carousel>
+        <div className="text-center relative">
+            <h2 className="text-5xl font-bold my-10">Partnerships</h2>
+            <div className="carousel-container relative overflow-hidden">
+                <Carousel
+                    opts={{
+                        loop: true,
+                        align: "center",
+                    }}
+                    plugins={[AutoScroll({stopOnInteraction: false})]}
+                    className="py-8"
+                >
+                    <CarouselContent>
+                        {logos.map((logo, index) => {
+                            return (
+                                <CarouselItem className="basis-1/5" key={index}>
+                                    <Card className="border-0 shadow-none">
+                                        <CardContent className="flex items-center justify-center p-6">
+                                            <img
+                                                src={`/logos/${logo}`}
+                                                alt={logo}
+                                                className="h-12 w-auto"
+                                            />
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                            );
+                        })}
+                    </CarouselContent>
+                </Carousel>
+                <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black opacity-50 blur-3xl"></div> {/* Blurry vignette overlay */}
+            </div>
+        </div>
     );
 };
 
