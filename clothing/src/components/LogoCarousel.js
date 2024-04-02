@@ -34,7 +34,7 @@ const LogoCarousel = ({ logos }) => {
                 loop: true,
                 align: "center",
             }}
-            plugins={[AutoScroll()]}
+            plugins={[AutoScroll({stopOnInteraction: false})]}
             className="py-8"
         >
             <CarouselContent>
