@@ -29,7 +29,6 @@ import AutoScroll from "embla-carousel-auto-scroll";
 const LogoCarousel = ({ logos }) => {
     return (
         <div className="text-center relative">
-            <h2 className="text-5xl font-bold my-10">Partnerships</h2>
             <div className="carousel-container relative overflow-hidden">
                 <Carousel
                     opts={{

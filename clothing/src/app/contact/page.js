@@ -1,7 +1,7 @@
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import Separator from '@/components/ui/separator';
+import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 
 import {
@@ -15,6 +15,7 @@ import {
 const Contact = () => {
   return (
     <>
+      <NavBar/>
       <div className="container mx-auto px-4 py-8 my-24">
         <h1 className="text-5xl font-bold m-10">Get in touch</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

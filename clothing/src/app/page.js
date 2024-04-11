@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 
 import logos from "@/data/logos";
 import LogoCarousel from "@/components/LogoCarousel";
+import Testimonials from "@/components/Testemonial";
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
             <HeroSection className="flex-grow" />
             <LogoCarousel logos={logos} />
             <ProductGrid />
+            <Testimonials />
             <Footer />
         </div>
     );
