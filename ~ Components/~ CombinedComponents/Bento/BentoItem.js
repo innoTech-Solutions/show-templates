@@ -1,3 +1,27 @@
+/**
+ * `BentoItem` is component that creates a single item in the component <BentoGrid/>.
+ *
+ * @component
+ * @param {Object} props - The properties passed to the component.
+ * @param {string} props.imgSrc - The source of the image to be displayed.
+ * @param {string} props.smTitle - The small title of the item.
+ * @param {string} props.mdTitle - The medium title of the item.
+ * @param {string} props.lgTitle - The large title of the item.
+ * @param {string} props.description - The description of the item.
+ * @param {string} props.buttonName - The name of the button.
+ * @param {string} props.className - Additional CSS classes that the user wants to add.
+ * @param {string} props.bgColor - The background color of the item.
+ * @param {string} props.textColor - The text color of the item.
+ * @param {React.Node} props.children - The child elements to be rendered within the item.
+ *
+ * @example
+ * <BentoItem imgSrc="image.jpg" smTitle="Small Title" mdTitle="Medium Title" lgTitle="Large Title" description="This is a description" buttonName="Click Me" className="my-custom-class" bgColor="bg-white" textColor="text-black">
+ *   <div>Child Element</div>
+ * </BentoItem>
+ *
+ * @returns A `div` element with the item layout and the child elements.
+ */
+
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
