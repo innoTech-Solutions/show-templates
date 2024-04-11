@@ -41,13 +41,8 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about">
-                  <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">About</span>
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact">
-                  <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">Contact</span>
+                  <span className="text-white cursor-pointer transition-colors duration-300 hover:text-cyan-300">Contact Us</span>
                 </Link>
               </li>
               <li>
