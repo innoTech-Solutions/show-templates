@@ -7,7 +7,7 @@ import Tab from "./admin-component/Tabs";
 
 export default function Admin() {
   return (
-    <div className="flex min-h-screen w-full flex-col dark:bg-gray-900 dark:text-white">
+    <div className="flex min-h-screen w-full flex-col bg-muted">
       <aside className="fixed inset-y-0 left-0 z-10 w-14 flex-col border-r bg-background sm:flex">
         <NavBar />
       </aside>
