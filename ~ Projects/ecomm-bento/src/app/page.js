@@ -17,13 +17,12 @@ export default function Home() {
             {/* TODO: Complete BentoHero Component*/}
 
             <BentoHero
-                className="h-[50vh] mb-4 grid grid-cols-1  max-w-7xl mx-auto"
-                smTitle=""
-                mdTitle=""
+                className="h-[70vh] mb-4 max-w-7xl mx-auto"
                 lgTitle="Air Force 1'07"
-                description="The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine."
+                description="The radiance lives on in the Nike Air Force 1 '07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine."
+                buttonText={"Shop Now"}
                 imgSrc="shoes_airforce1.png"
-                bgColor="bg-white"
+                bgColor="bg-neutral-200"
                 textColor="text-black"
             />
             <BentoGrid className="max-w-4xl mx-auto">
