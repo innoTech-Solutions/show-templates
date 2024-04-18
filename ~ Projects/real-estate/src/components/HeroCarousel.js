@@ -21,7 +21,7 @@ const HeroCarousel = ({ header, description, buttonText, imagesLength }) => {
     const [api, setApi] = useState();
 
     const scrollPrev = useCallback(() => {
-        if (api) api.scrollPrev();
+        if (api) api.scrollPrev(); 
     }, [api]);
 
     const scrollNext = useCallback(() => {
