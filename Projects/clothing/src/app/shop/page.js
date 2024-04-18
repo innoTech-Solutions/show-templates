@@ -24,8 +24,12 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import Footer from "@/components/Footer";
-
+/**
+ * The Shop component displays a list of products with filtering, sorting, and pagination features.
+ * It uses a variety of UI components such as Accordion, Pagination, Select, and Input from the Shadcn UI library.
+ */
 const Shop = () => {
+  // Sample product data
   const products = [
     { id: 1, name: 'Product 1', category: 'Tops', price: '$19.99', image: 'https://via.placeholder.com/150' },
     { id: 2, name: 'Product 2', category: 'Bottoms', price: '$24.99', image: 'https://via.placeholder.com/150' },
